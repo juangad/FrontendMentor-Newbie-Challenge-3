@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+#container {
+  max-width: 800px;
+  width: 800px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: .03rem;
+  box-shadow: 0px 0px 20px 10px hsla(180, 1%, 41%, 0.308);
+}
+
+.intro {
+  background-color: white;
+  padding: 30px;
+}
+
+h2:first-child {
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+
+.intro .title {
+  color: hsl(179, 62%, 38%);
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+
+.intro .guarantee {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.intro p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.7rem;
+}
+
+.bottom-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-box > section {
+  flex: 1;
+}
+
+.subscription {
+  background-color: hsl(179, 62%, 38%);
+  color: white;
+  padding: 30px;
+}
+
+.subscription .price {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.subscription .price span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.subscription .price p {
+  opacity: .5;
+}
+
+.subscription button {
+  width: 100%;
+  line-height: 60px;
+  margin-top: 30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0px 5px 10px hsla(178, 73%, 26%, 0.822);
+  transition: ease 0.3s;
+}
+
+.subscription button:hover {
+  background-color: hsl(71, 69%, 63%);
+}
+
+.why-us {
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  padding: 30px;
+}
+
+.why-us ul {
+  list-style: none;
+  opacity: .8;
+}
+
+.why-us ul li {
+  line-height: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .bottom-box {
+    flex-direction: row;
+  }
+}
